@@ -1,0 +1,694 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{00A5F0F2-3B57-41A7-A83E-F0EF00FA94C3}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Infortec_Stock_Management</RootNamespace>
+    <AssemblyName>Infortec_Stock_Management</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>C:\Users\User\Desktop\test c\deploy2\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>16</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>7BB116227B1B88FA0C2FF7A5C885FF8C57CEB6CE</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>Infortec_Stock_Management_TemporaryKey.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>true</SignManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>inforteclogo_bird.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="itextsharp">
+      <HintPath>..\..\..\..\Users\User\Desktop\tttt\Export_DataGridView_PDF_CS\iTextSharp\itextsharp.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.Common, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91" />
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91" />
+    <Reference Include="MySql.Data, Version=6.9.4.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\Program Files (x86)\MySQL\Connector.NET 6.9\Assemblies\v2.0\MySql.Data.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.configuration">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Core">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web.Services">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Windows.Forms.DataVisualization">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.CSharp">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Data">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Deployment">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Drawing">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Windows.Forms">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Xml">
+      <Private>True</Private>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Add_Deduct.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Add_Deduct.Designer.cs">
+      <DependentUpon>Add_Deduct.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CreateExcelDoc.cs" />
+    <Compile Include="DataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSet2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DBConnect.cs" />
+    <Compile Include="FirstScreen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FirstScreen.Designer.cs">
+      <DependentUpon>FirstScreen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_login.Designer.cs">
+      <DependentUpon>frm_login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_mainInsert.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_mainInsert.Designer.cs">
+      <DependentUpon>frm_mainInsert.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_reports.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_reports.Designer.cs">
+      <DependentUpon>frm_reports.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_studyPackLog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_studyPackLog.Designer.cs">
+      <DependentUpon>frm_studyPackLog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_studyPacks.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_studyPacks.Designer.cs">
+      <DependentUpon>frm_studyPacks.cs</DependentUpon>
+    </Compile>
+    <Compile Include="infortecstockDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>infortecstockDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="infortecstockDataSet1.cs">
+      <DependentUpon>infortecstockDataSet1.xsd</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="infortecstockDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>infortecstockDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="infortecstockDataSet10.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>infortecstockDataSet10.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="infortecstockDataSet11.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>infortecstockDataSet11.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="infortecstockDataSet12.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>infortecstockDataSet12.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="infortecstockDataSet13.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>infortecstockDataSet13.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="infortecstockDataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>infortecstockDataSet2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="infortecstockDataSet3.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>infortecstockDataSet3.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="infortecstockDataSet4.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>infortecstockDataSet4.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="infortecstockDataSet5.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>infortecstockDataSet5.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="infortecstockDataSet6.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>infortecstockDataSet6.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="infortecstockDataSet7.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>infortecstockDataSet7.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="infortecstockDataSet8.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>infortecstockDataSet8.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="infortecstockDataSet9.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>infortecstockDataSet9.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="log.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="log.Designer.cs">
+      <DependentUpon>log.cs</DependentUpon>
+    </Compile>
+    <Compile Include="nilaSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>nilaSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="parent.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="parent.Designer.cs">
+      <DependentUpon>parent.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Reporting.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reporting.Designer.cs">
+      <DependentUpon>Reporting.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\pics.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>pics.resx</DependentUpon>
+    </Compile>
+    <Compile Include="SimpleAES.cs" />
+    <Compile Include="SplashScreen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SplashScreen.Designer.cs">
+      <DependentUpon>SplashScreen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="userRegistration.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="userRegistration.Designer.cs">
+      <DependentUpon>userRegistration.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Add_Deduct.resx">
+      <DependentUpon>Add_Deduct.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FirstScreen.resx">
+      <DependentUpon>FirstScreen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_login.resx">
+      <DependentUpon>frm_login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_mainInsert.resx">
+      <DependentUpon>frm_mainInsert.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_reports.resx">
+      <DependentUpon>frm_reports.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_studyPackLog.resx">
+      <DependentUpon>frm_studyPackLog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_studyPacks.resx">
+      <DependentUpon>frm_studyPacks.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="log.resx">
+      <DependentUpon>log.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="parent.resx">
+      <DependentUpon>parent.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Reporting.resx">
+      <DependentUpon>Reporting.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\pics.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>pics.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SplashScreen.resx">
+      <DependentUpon>SplashScreen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="userRegistration.resx">
+      <DependentUpon>userRegistration.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="app.config" />
+    <None Include="DataSet1.xsc">
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet1.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSet1.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DataSet1.xss">
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet2.xsc">
+      <DependentUpon>DataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet2.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSet2.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DataSet2.xss">
+      <DependentUpon>DataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="infortecstockDataSet.xsc">
+      <DependentUpon>infortecstockDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="infortecstockDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>infortecstockDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="infortecstockDataSet.xss">
+      <DependentUpon>infortecstockDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="infortecstockDataSet1.xsc">
+      <DependentUpon>infortecstockDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="infortecstockDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>infortecstockDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="infortecstockDataSet1.xss">
+      <DependentUpon>infortecstockDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="infortecstockDataSet10.xsc">
+      <DependentUpon>infortecstockDataSet10.xsd</DependentUpon>
+    </None>
+    <None Include="infortecstockDataSet10.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>infortecstockDataSet10.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="infortecstockDataSet10.xss">
+      <DependentUpon>infortecstockDataSet10.xsd</DependentUpon>
+    </None>
+    <None Include="infortecstockDataSet11.xsc">
+      <DependentUpon>infortecstockDataSet11.xsd</DependentUpon>
+    </None>
+    <None Include="infortecstockDataSet11.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>infortecstockDataSet11.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="infortecstockDataSet11.xss">
+      <DependentUpon>infortecstockDataSet11.xsd</DependentUpon>
+    </None>
+    <None Include="infortecstockDataSet12.xsc">
+      <DependentUpon>infortecstockDataSet12.xsd</DependentUpon>
+    </None>
+    <None Include="infortecstockDataSet12.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>infortecstockDataSet12.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="infortecstockDataSet12.xss">
+      <DependentUpon>infortecstockDataSet12.xsd</DependentUpon>
+    </None>
+    <None Include="infortecstockDataSet13.xsc">
+      <DependentUpon>infortecstockDataSet13.xsd</DependentUpon>
+    </None>
+    <None Include="infortecstockDataSet13.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>infortecstockDataSet13.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="infortecstockDataSet13.xss">
+      <DependentUpon>infortecstockDataSet13.xsd</DependentUpon>
+    </None>
+    <None Include="infortecstockDataSet2.xsc">
+      <DependentUpon>infortecstockDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="infortecstockDataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>infortecstockDataSet2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="infortecstockDataSet2.xss">
+      <DependentUpon>infortecstockDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="infortecstockDataSet3.xsc">
+      <DependentUpon>infortecstockDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="infortecstockDataSet3.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>infortecstockDataSet3.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="infortecstockDataSet3.xss">
+      <DependentUpon>infortecstockDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="infortecstockDataSet4.xsc">
+      <DependentUpon>infortecstockDataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="infortecstockDataSet4.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>infortecstockDataSet4.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="infortecstockDataSet4.xss">
+      <DependentUpon>infortecstockDataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="infortecstockDataSet5.xsc">
+      <DependentUpon>infortecstockDataSet5.xsd</DependentUpon>
+    </None>
+    <None Include="infortecstockDataSet5.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>infortecstockDataSet5.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="infortecstockDataSet5.xss">
+      <DependentUpon>infortecstockDataSet5.xsd</DependentUpon>
+    </None>
+    <None Include="infortecstockDataSet6.xsc">
+      <DependentUpon>infortecstockDataSet6.xsd</DependentUpon>
+    </None>
+    <None Include="infortecstockDataSet6.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>infortecstockDataSet6.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="infortecstockDataSet6.xss">
+      <DependentUpon>infortecstockDataSet6.xsd</DependentUpon>
+    </None>
+    <None Include="infortecstockDataSet7.xsc">
+      <DependentUpon>infortecstockDataSet7.xsd</DependentUpon>
+    </None>
+    <None Include="infortecstockDataSet7.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>infortecstockDataSet7.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="infortecstockDataSet7.xss">
+      <DependentUpon>infortecstockDataSet7.xsd</DependentUpon>
+    </None>
+    <None Include="infortecstockDataSet8.xsc">
+      <DependentUpon>infortecstockDataSet8.xsd</DependentUpon>
+    </None>
+    <None Include="infortecstockDataSet8.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>infortecstockDataSet8.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="infortecstockDataSet8.xss">
+      <DependentUpon>infortecstockDataSet8.xsd</DependentUpon>
+    </None>
+    <None Include="infortecstockDataSet9.xsc">
+      <DependentUpon>infortecstockDataSet9.xsd</DependentUpon>
+    </None>
+    <None Include="infortecstockDataSet9.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>infortecstockDataSet9.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="infortecstockDataSet9.xss">
+      <DependentUpon>infortecstockDataSet9.xsd</DependentUpon>
+    </None>
+    <None Include="Infortec_Stock_Management_TemporaryKey.pfx" />
+    <None Include="nilaSet1.xsc">
+      <DependentUpon>nilaSet1.xsd</DependentUpon>
+    </None>
+    <None Include="nilaSet1.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>nilaSet1.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="nilaSet1.xss">
+      <DependentUpon>nilaSet1.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\DataSources\CreateExcelDoc.datasource" />
+    <None Include="Properties\DataSources\DBConnect.datasource" />
+    <None Include="Properties\DataSources\frm_addDeduct.datasource" />
+    <None Include="Properties\DataSources\frm_firstScreen.datasource" />
+    <None Include="Properties\DataSources\frm_login.datasource" />
+    <None Include="Properties\DataSources\frm_mainInsert.datasource" />
+    <None Include="Properties\DataSources\frm_studyPack.datasource" />
+    <None Include="Properties\DataSources\infortecstockDataSet.datasource" />
+    <None Include="Properties\DataSources\infortecstockDataSet.located_inDataTable.datasource" />
+    <None Include="Properties\DataSources\infortecstockDataSet.located_inRow.datasource" />
+    <None Include="Properties\DataSources\infortecstockDataSet.located_inRowChangeEvent.datasource" />
+    <None Include="Properties\DataSources\infortecstockDataSet.located_inRowChangeEventHandler.datasource" />
+    <None Include="Properties\DataSources\Infortec_Stock_Management.infortecstockDataSetTableAdapters.located_inTableAdapter.datasource" />
+    <None Include="Properties\DataSources\Infortec_Stock_Management.infortecstockDataSetTableAdapters.TableAdapterManager+UpdateOrderOption.datasource" />
+    <None Include="Properties\DataSources\Infortec_Stock_Management.infortecstockDataSetTableAdapters.TableAdapterManager.datasource" />
+    <None Include="Properties\DataSources\Infortec_Stock_Management.Properties.Resources.datasource" />
+    <None Include="Properties\DataSources\Infortec_Stock_Management.Properties.Settings.datasource" />
+    <None Include="Properties\DataSources\parent.datasource" />
+    <None Include="Properties\DataSources\Program.datasource" />
+    <None Include="Properties\DataSources\SimpleAES.datasource" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Folder-Add-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="Microsoft.Office.Core">
+      <Guid>{2DF8D04C-5BFA-101B-BDE5-00AA0044DE52}</Guid>
+      <VersionMajor>2</VersionMajor>
+      <VersionMinor>5</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="Microsoft.Office.Interop.Excel">
+      <Guid>{00020813-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>7</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="VBIDE">
+      <Guid>{0002E157-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>5</VersionMajor>
+      <VersionMinor>3</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\inforteclogo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\inventory.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="images\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\inforteclogo_bird.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\index.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\books.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\userMgt.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\newclass_wiz.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ico_edit.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\delete.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\delete1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.0,Profile=Client">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4 Client Profile %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.SqlServer.SQLSysClrTypes.11.0.x64">
+      <Visible>False</Visible>
+      <ProductName>Microsoft® System CLR Types for SQL Server® 2012 %28x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.SqlServer.SQLSysClrTypes.11.0.x86">
+      <Visible>False</Visible>
+      <ProductName>Microsoft® System CLR Types for SQL Server® 2012 %28x86%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.4.5">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 4.5</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\%24this.BackgroundImage2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\specter.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Mouse.jpg" />
+    <None Include="Resources\Monitor.jpg" />
+    <None Include="Resources\Long wooden tables.jpg" />
+    <None Include="Resources\Keyboard.jpg" />
+    <None Include="Resources\BCS T-Shirt.jpg" />
+    <None Include="Resources\Computer Tables.jpg" />
+    <None Include="Resources\bg_final.jpg" />
+    <Content Include="inforteclogo_bird.ico" />
+    <Content Include="Resources\CPU.jpg" />
+    <None Include="Resources\Handrest chair.jpg" />
+    <None Include="Resources\HDCS T-Shirt.jpg" />
+    <Content Include="Resources\Image1.jpg" />
+    <None Include="Resources\white boards.jpg" />
+    <None Include="Resources\Staff T-Shirt.jpg" />
+    <None Include="Resources\Rotating Chairs.jpg" />
+    <None Include="Resources\Projector.jpg" />
+    <None Include="Resources\Projector Screen.jpg" />
+    <None Include="Resources\Normal chair.jpg" />
+    <None Include="Resources\New cushion chair.jpg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

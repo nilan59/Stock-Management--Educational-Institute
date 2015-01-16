@@ -1,0 +1,14 @@
+C:\Nilan\Projects\Infortec_Stock_Management\Infortec_Stock_Management\bin\Release\Infortec_Stock_Management.exe
+C:\Nilan\Projects\Infortec_Stock_Management\Infortec_Stock_Management\bin\Release\Infortec_Stock_Management.pdb
+C:\Nilan\Projects\Infortec_Stock_Management\Infortec_Stock_Management\bin\Release\MySql.Data.dll
+C:\Nilan\Projects\Infortec_Stock_Management\Infortec_Stock_Management\obj\x86\Release\Infortec_Stock_Management.csproj.ResolveComReference.cache
+C:\Nilan\Projects\Infortec_Stock_Management\Infortec_Stock_Management\obj\x86\Release\Infortec_Stock_Management.frm_addDeduct.resources
+C:\Nilan\Projects\Infortec_Stock_Management\Infortec_Stock_Management\obj\x86\Release\Infortec_Stock_Management.frm_firstScreen.resources
+C:\Nilan\Projects\Infortec_Stock_Management\Infortec_Stock_Management\obj\x86\Release\Infortec_Stock_Management.frm_mainInsert.resources
+C:\Nilan\Projects\Infortec_Stock_Management\Infortec_Stock_Management\obj\x86\Release\Infortec_Stock_Management.Properties.Resources.resources
+C:\Nilan\Projects\Infortec_Stock_Management\Infortec_Stock_Management\obj\x86\Release\Infortec_Stock_Management.csproj.GenerateResource.Cache
+C:\Nilan\Projects\Infortec_Stock_Management\Infortec_Stock_Management\obj\x86\Release\Infortec_Stock_Management.exe
+C:\Nilan\Projects\Infortec_Stock_Management\Infortec_Stock_Management\obj\x86\Release\Infortec_Stock_Management.pdb
+C:\Nilan\Projects\Infortec_Stock_Management\Infortec_Stock_Management\obj\x86\Release\Infortec_Stock_Management.csprojResolveAssemblyReference.cache
+C:\Nilan\Projects\Infortec_Stock_Management\Infortec_Stock_Management\obj\x86\Release\Infortec_Stock_Management.frm_login.resources
+C:\Nilan\Projects\Infortec_Stock_Management\Infortec_Stock_Management\obj\x86\Release\Infortec_Stock_Management.parent.resources
